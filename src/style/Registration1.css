@@ -1,0 +1,80 @@
+/* RegistrationPage.css */
+.registration-container {
+  height: 100vh;
+}
+
+.left-column {
+  background-color: gray; /* Left column background color */
+  height: 100vh;
+}
+
+.right-column {
+  background-color: #ffffff; /* Right column background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.registration-form {
+  margin-top: 23px;
+  width: 80%; /* Adjust the width of the registration form as needed */
+}
+
+.btnreg {
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+}
+
+.btnreg:hover {
+  background-color: #3c3f3d !important;
+  border-color: #ffffff !important;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Adjust the margin to create space between form controls */
+}
+
+.login-link {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.greeting {
+  margin-bottom: 80px;
+}
+
+.greeting h2 {
+  color: gray;
+}
+
+.checkbtn {
+  margin-top: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.formerp {
+  margin-top: 20px;
+  text-align: left;
+  color: grey;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .right-column {
+    order: -1; /* Move the right column to the top on small screens */
+  }
+  .left-column {
+    order: +1;
+    height: 15vh;
+  }
+}
